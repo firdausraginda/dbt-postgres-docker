@@ -1,0 +1,14 @@
+dbt_dwh:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: host.docker.internal
+      port: 3000
+      user: admin
+      pass: admin
+      dbname: postgres
+      schema: public
+
+  target: dev
